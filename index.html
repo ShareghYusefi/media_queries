@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Meta tag to set the viewport width to the device width -->
+    <!-- media queries require this meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <!-- Internal Style Sheet -->
+    <style>
+      .card {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+      }
+
+      /* media queries
+      *Syntax: @media media-type logicalOperator (media-feature) { CSS rules; }
+      */
+      /* Media types: all, screen, print, speech */
+      /* Media features: width, height, aspect-ratio, orientation, resolution */
+      /* Logical operators: and, not, only */
+
+      @media screen and (max-width: 450px) {
+        .card {
+          background-color: blueviolet;
+          color: aliceblue;
+        }
+      }
+
+      @media print {
+        .card {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+
+      /* NOT & Only are written before media type */
+      @media only screen and (min-width: 768px) {
+        .card {
+          background-color: #0044ff;
+          color: #fff;
+        }
+      }
+
+      @media not screen and (max-width: 1080px) {
+        .card {
+          background-color: #ff0000;
+          color: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Media Queries</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        modi quam deserunt ab repudiandae qui facilis, harum consectetur? Dolore
+        illum hic inventore beatae impedit non quasi, iste ut? Expedita at
+        nihil, reprehenderit atque architecto nemo nobis? Velit, deserunt dolor.
+        Consectetur, assumenda deleniti. Quo facere numquam labore porro
+        voluptatibus unde inventore.
+      </p>
+    </div>
+  </body>
+</html>
