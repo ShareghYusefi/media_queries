@@ -51,6 +51,33 @@
           color: #fff;
         }
       }
+
+      /* orientation */
+      @media screen and (orientation: landscape) {
+        body {
+          background-color: #00b7ff;
+        }
+      }
+
+      @media screen and (orientation: portrait) {
+        body {
+          background-color: #00ff1a;
+        }
+      }
+
+      /* aspect-ratio */
+      @media screen and (aspect-ratio: 1/1) {
+        body {
+          background-color: #fcca00;
+        }
+      }
+
+      /* height */
+      @media screen and (max-height: 500px) {
+        body {
+          background-color: #ff00ff;
+        }
+      }
     </style>
   </head>
   <body>
